@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vote for cats or dogs</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Pacifico|Righteous|Shrikhand|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="index.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Let's settle the score once and for all!</h1>
+        <p>What do you like more, cats or dogs?</p>
+        <button onclick="toggleVoteContainer()">Vote</button>
+      </div>
+    </div>
+
+    <div id="vote-container">
+      <div id="cats-container" class="voting">
+        <div class="carousel"id="cats-carousel"onclick="changeImage(this)">
+          <img src="https://www.bluecross.org.uk/sites/default/files/assets/images/118809lpr.jpg" alt="cat image"/>
+        </div>
+
+        <div class="likes">
+          <i class="fas fa-heart" onclick="increasedLikes(this)">0</i> Likes
+        </div>
+      </div>
+
+      <div id="dogs-container" class="voting">
+        <div class="carousel" id="dogs-carousel"onclick="changeImage(this)">
+          <img src="http://puppytoob.com/wp-content/uploads/2017/08/Saint-Bernard-Puppies-750x563.jpg" alt="dog image"/>
+        </div>
+
+        <div class="likes">
+          <i class="fas fa-heart" onclick="increasedLikes(this)">0</i> Likes
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
